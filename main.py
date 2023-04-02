@@ -33,7 +33,7 @@ def create_app():
 
 
     ##CONNECT TO DB
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://blog_htta_user:4Tg8LPcRqMeGY4b3xPZLV3EX6LZsHAjK@dpg-cgkkt8e4dad69r2vflu0-a.oregon-postgres.render.com/blog_htta'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['internal']
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
