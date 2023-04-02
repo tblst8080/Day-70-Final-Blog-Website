@@ -16,21 +16,24 @@ from flask_bcrypt import Bcrypt
 
 load_dotenv()
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-ckeditor = CKEditor(app)
-Bootstrap(app)
 
-##CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('external', 'sqlite:///blog.db')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+def create_app():
+    app = Flask(__name__)
+    app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+    ckeditor = CKEditor(app)
+    Bootstrap(app)
 
-bcrypt = Bcrypt(app)  # Apply Bcrypt configurations to the app (enable Bcrypt features)
+    ##CONNECT TO DB
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('external', 'sqlite:///blog.db')
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    db = SQLAlchemy(app)
 
-login_manager = LoginManager()
-login_manager.init_app(app)  # Apply login_manager configurations to the app (enable login features)
+    bcrypt = Bcrypt(app)  # Apply Bcrypt configurations to the app (enable Bcrypt features)
 
+    login_manager = LoginManager()
+    login_manager.init_app(app)  # Apply login_manager configurations to the app (enable login features)
+
+    return app
 
 gravatar = Gravatar(app,
                     size=500,
@@ -274,5 +277,3 @@ if __name__ == "__main__":
     with app.app_context():
         db.create_all()
     app.run(host='0.0.0.0', port=5000)
-
-# Try again with another line
