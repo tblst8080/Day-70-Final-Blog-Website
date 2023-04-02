@@ -12,9 +12,6 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from flask_bcrypt import Bcrypt
-from dotenv import load_dotenv
-
-load_dotenv()
 
 ckeditor = CKEditor()
 bcrypt = Bcrypt()  # Apply Bcrypt configurations to the app (enable Bcrypt features)
@@ -36,7 +33,7 @@ def create_app():
 
 
     ##CONNECT TO DB
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['external']
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['internal']
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
