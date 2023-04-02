@@ -155,7 +155,8 @@ def login():
         if form.validate_on_submit():
 
             # Check if email is registered
-            if entry := User.query.filter_by(email=form.email.data).first():
+            entry = User.query.filter_by(email=form.email.data).first()
+            if entry:
 
                 # Check if password is valid:
                 if bcrypt.check_password_hash(entry.password, form.password.data):
