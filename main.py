@@ -12,6 +12,9 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from flask_bcrypt import Bcrypt
+from dotenv import load_dotenv
+
+load_dotenv()
 
 ckeditor = CKEditor()
 bcrypt = Bcrypt()  # Apply Bcrypt configurations to the app (enable Bcrypt features)
@@ -33,7 +36,7 @@ def create_app():
 
 
     ##CONNECT TO DB
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['internal']
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['external']
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
@@ -129,7 +132,7 @@ def register():
             del data['csrf_token'], data['submit']  # remove unnecessary data from dictionary
 
             # Hash password
-            data['password'] = bcrypt.generate_password_hash(password=data['password'], rounds=12).decode('utf8')
+            data['password'] = bcrypt.generate_password_hash(password=data['password'], rounds=12).decode('utf-8')
 
             entry = User(**data)  # Create user entry
             db.session.add(entry)  # Add user to database
