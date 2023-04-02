@@ -129,7 +129,7 @@ def register():
             del data['csrf_token'], data['submit']  # remove unnecessary data from dictionary
 
             # Hash password
-            data['password'] = bcrypt.generate_password_hash(password=data['password'], rounds=12)
+            data['password'] = bcrypt.generate_password_hash(password=data['password'], rounds=12).decode('utf8')
 
             entry = User(**data)  # Create user entry
             db.session.add(entry)  # Add user to database
