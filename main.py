@@ -1,6 +1,5 @@
 import functools
 import os
-from dotenv import load_dotenv
 from flask import Flask, render_template, redirect, url_for, flash, request, abort
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
@@ -14,28 +13,12 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from flask_bcrypt import Bcrypt
 
-load_dotenv()
+ckeditor = CKEditor()
+bcrypt = Bcrypt()  # Apply Bcrypt configurations to the app (enable Bcrypt features)
+db = SQLAlchemy()
+login_manager = LoginManager()
 
-
-def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-    ckeditor = CKEditor(app)
-    Bootstrap(app)
-
-    ##CONNECT TO DB
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('external', 'sqlite:///blog.db')
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    db = SQLAlchemy(app)
-
-    bcrypt = Bcrypt(app)  # Apply Bcrypt configurations to the app (enable Bcrypt features)
-
-    login_manager = LoginManager()
-    login_manager.init_app(app)  # Apply login_manager configurations to the app (enable login features)
-
-    return app
-
-gravatar = Gravatar(app,
+gravatar = Gravatar(
                     size=500,
                     rating='g',
                     default='retro',
@@ -43,6 +26,26 @@ gravatar = Gravatar(app,
                     force_lower=False,
                     use_ssl=False,
                     base_url=None)
+
+def create_app():
+    app = Flask(__name__)
+    app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+
+
+    ##CONNECT TO DB
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://blog_htta_user:4Tg8LPcRqMeGY4b3xPZLV3EX6LZsHAjK@dpg-cgkkt8e4dad69r2vflu0-a.oregon-postgres.render.com/blog_htta'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+
+    login_manager.init_app(app)  # Apply login_manager configurations to the app (enable login features)
+    ckeditor.init_app(app)
+    Bootstrap(app)
+    bcrypt.init_app(app)
+    db.init_app(app)
+    gravatar.init_app(app)
+    return app
+
+app = create_app()
 
 ##CONFIGURE TABLES
 
@@ -180,7 +183,6 @@ def login():
             return render_template("login.html", form=form)
 
 
-
 @app.route('/logout')
 def logout():
     logout_user()
@@ -209,16 +211,13 @@ def show_post(post_id):
         comment_form = CommentForm()
         return render_template("post.html", post=requested_post, form=comment_form)
 
-
 @app.route("/about")
 def about():
     return render_template("about.html")
 
-
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
-
 
 @app.route("/new-post", methods=["GET", "POST"])
 def add_new_post():
@@ -273,7 +272,5 @@ def delete_post(post_id):
     return redirect(url_for('get_all_posts'))
 
 
-if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
-    app.run(host='0.0.0.0', port=5000)
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0', port=5000)
