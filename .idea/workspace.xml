@@ -4,71 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a1ee607-6c3e-445a-acea-06e9c06257a0" name="Changes" comment="add gitignore">
+    <list default="true" id="4a1ee607-6c3e-445a-acea-06e9c06257a0" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/README (1).md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/highlight (1).pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/arta (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/ascetic (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-dune (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-dune (1).light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-forest (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-forest (1).light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-heath (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-heath (1).light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-lakeside (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-lakeside (1).light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/atelier-seaside (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/brown_paper (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/brown_papersq (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/dark (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/default (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/docco (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/far (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/googlecode (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/idea (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/mono-blue (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/monokai_sublime (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/obsidian (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/paraiso (1).dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/pojoaque (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/railscasts (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/rainbow (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/school_book (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/solarized_light (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/tomorrow (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/tomorrow-night (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/vs (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/xcode (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/codesnippet/lib/highlight/styles/zenburn (1).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/images/handle (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/az (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/bg (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/cs (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/de (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/el (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/en (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/en-gb (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/fi (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/he (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/hr (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/ja (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/km (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/oc (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/pl (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/pt-br (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/ru (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/sk (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/sl (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/sq (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/sr-latn (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/sv (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/tt (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/lang/zh (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/flask_ckeditor/static/standard/plugins/widget/plugin (1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680427218187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes">
+      <created>1680430025075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680430025075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +100,7 @@
     </ignored-roots>
     <MESSAGE value="save all files" />
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>
